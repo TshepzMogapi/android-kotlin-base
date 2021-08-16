@@ -9,13 +9,12 @@
     android:layout_height="wrap_content"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/random_txt"
+    <ImageView
+        android:id="@+id/dice_img"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Hello Universe!" />
+        android:src="@drawable/dice_1"/>
 
     <Button
         android:id="@+id/randomize_btn"
