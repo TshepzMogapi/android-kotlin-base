@@ -8,16 +8,17 @@ import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+    lateinit var diceImage : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        diceImage = findViewById(R.id.dice_img)
         val randomizeBtn: Button = findViewById(R.id.randomize_btn)
         randomizeBtn.setOnClickListener{ randomize() }
     }
 
     private fun randomize() {
         val randomInt = (1..6).random()
-        val diceIamge: ImageView = findViewById(R.id.dice_img)
         val drawableResource = when (randomInt) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-        diceIamge.setImageResource(drawableResource)
+        diceImage.setImageResource(drawableResource)
         Toast.makeText(this, "Random thing!!!",
         Toast.LENGTH_SHORT).show()
     }
