@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android-kotlin-base</string>
+    <string name="randomize_btn_label">Randomize</string>
 </resources>
