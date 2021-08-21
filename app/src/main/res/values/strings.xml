@@ -12,4 +12,19 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="name">Kotlin</string>
+    <string name="android">Android Image</string>
+    <string name="about_android">
+        Android mobile development has been Kotlin-first since Google I/O in 2019
+        Using Kotlin for Android development, you can benefit from:
+        \n\n
+        Write better Android apps faster with Kotlin. Kotlin is a modern statically typed programming language used by over 60% of professional Android developers that helps boost productivity, developer satisfaction, and code safety.
+        \n\n
+        Kotlin\'s modern language features allow you to focus on expressing your ideas and write less boilerplate code.
+        \n\n
+        With @Nullable and @NonNull included in its type system, Kotlin helps you avoid NullPointerExceptions. Android apps that use Kotlin are 20% less likely to crash.
+        \n\n
+        Kotlin is 100% interoperable with the Java programming language, so you can have as little or as much of Kotlin in your project as you want.
+        \n\n
+    </string>
 </resources>
