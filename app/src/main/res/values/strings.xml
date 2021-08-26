@@ -27,4 +27,7 @@
         Kotlin is 100% interoperable with the Java programming language, so you can have as little or as much of Kotlin in your project as you want.
         \n\n
     </string>
+
+    <string name="kotlin_question">What year did Android become Kotlin-first?</string>
+    <string name="submit">Submit</string>
 </resources>

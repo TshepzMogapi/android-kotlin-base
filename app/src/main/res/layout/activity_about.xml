@@ -23,6 +23,27 @@
         android:contentDescription="@string/android"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
+    <EditText
+        android:id="@+id/random_answer_et"
+        style="@style/NameStyle"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/kotlin_question"
+        android:inputType="date|number"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/submit_answer_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:fontFamily="@font/roboto"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showInfo"
+        android:text="@string/submit" />
+
     <ScrollView
         android:id="@+id/about_android_kotlin_sv"
         android:layout_width="match_parent"
@@ -33,6 +54,7 @@
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:paddingStart="@dimen/layout_padding"
             android:paddingEnd="@dimen/layout_padding"
             android:lineSpacingMultiplier="1.2"
