@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidkotlinbase">
         <activity
+            android:name=".ColorMyViews"
+            android:exported="true"></activity>
+        <activity
             android:name=".AboutActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".NavigationDrawer"
             android:label="@string/title_activity_navigation_drawer"
