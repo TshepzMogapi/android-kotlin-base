@@ -1,63 +1,70 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".AboutActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/name_text"
+    <data>
+        <variable
+            name="info"
+            type="com.example.android_kotlin_base.Info" />
+    </data>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textAlignment="center"
-        style="@style/NameStyle" />
-
-    <ImageView
-        android:id="@+id/android_img"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_margin"
-        android:contentDescription="@string/android"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
-
-    <EditText
-        android:id="@+id/random_answer_et"
-        style="@style/NameStyle"
-        android:textSize="16sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/kotlin_question"
-        android:inputType="date|number"
-        android:textAlignment="textStart" />
-
-    <Button
-        android:id="@+id/submit_answer_btn"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_margin"
-        android:fontFamily="@font/roboto"
-        android:layout_gravity="center_horizontal"
-        android:onClick="showInfo"
-        android:text="@string/submit" />
-
-    <ScrollView
-        android:id="@+id/about_android_kotlin_sv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AboutActivity">
 
         <TextView
-            android:id="@+id/about_android_kotlin_tv"
+            android:id="@+id/name_text"
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:paddingStart="@dimen/layout_padding"
-            android:paddingEnd="@dimen/layout_padding"
-            android:lineSpacingMultiplier="1.2"
-            android:text="@string/about_android" />
-    </ScrollView>
-</LinearLayout>
+            android:text="@={info.year}"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/android_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:contentDescription="@string/android"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <EditText
+            android:id="@+id/random_answer_et"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kotlin_question"
+            android:inputType="date|number"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/submit_answer_btn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:fontFamily="@font/roboto"
+            android:onClick="showInfo"
+            android:text="@string/submit" />
+
+        <ScrollView
+            android:id="@+id/about_android_kotlin_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/about_android_kotlin_tv"
+                style="@style/NameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingStart="@dimen/layout_padding"
+                android:paddingEnd="@dimen/layout_padding"
+                android:text="@string/about_android"
+                android:visibility="gone" />
+        </ScrollView>
+    </LinearLayout>
+</layout>
